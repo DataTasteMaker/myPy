@@ -1,0 +1,9 @@
+line1: So far we’ve encountered two ways of writing values: expression statements and the print statement. (A third way is using the write() 
+line2: offile objects; the standard output file can be referenced as sys.stdout. See the Library Reference for more information on this.)
+line3: Often you’ll want more control over the formatting of your output than simply printing space-separated values. There are two ways to
+line4: output; the first way is to do all the string handling yourself; using string slicing and concatenation operations you can create any can
+line5: imagine. The string types have some methods that perform useful operations for padding strings to a given column width; these will be
+line6: imagineThe string module contains a Template class which offers yet another way to substitute values into strings.
+line7: One question remains, of course: how do you convert values to strings? Luckily, Python has ways to convert any value to a string: pass it line8: repr() or str() functions.The str() function is meant to return representations of values which are fairly human-readable, while repr() is meant to generate representations which can be read by the interpreter (or will force a SyntaxError if there is no equivalent syntax). For 
+line9: objects which don’t have a particular representation for human consumption, str() will return the same value as repr(). Many values, such
+line10: as numbers or structures like lists and dictionaries, have the same representation using either function. Strings and floating point numbers, in particular, have two distinct representations.
